@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookTokenGenerator", "FacebookTokenGenerator\FacebookTokenGenerator.csproj", "{6EBB72BE-DAD7-47F8-BFEE-7BFE6ADC8B71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookTokenGenerator.App", "FacebookTokenGenerator.App\FacebookTokenGenerator.App.csproj", "{A11AAD40-D39C-4CE5-8DFE-32A0364BA9C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EBB72BE-DAD7-47F8-BFEE-7BFE6ADC8B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EBB72BE-DAD7-47F8-BFEE-7BFE6ADC8B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EBB72BE-DAD7-47F8-BFEE-7BFE6ADC8B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EBB72BE-DAD7-47F8-BFEE-7BFE6ADC8B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A11AAD40-D39C-4CE5-8DFE-32A0364BA9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A11AAD40-D39C-4CE5-8DFE-32A0364BA9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A11AAD40-D39C-4CE5-8DFE-32A0364BA9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A11AAD40-D39C-4CE5-8DFE-32A0364BA9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
