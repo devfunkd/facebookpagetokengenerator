@@ -1,18 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace FacebookTokenGenerator.App
 {
@@ -28,13 +16,29 @@ namespace FacebookTokenGenerator.App
         {
             ViewModel = new FacebookTokenGeneratorViewModel();
             DataContext = ViewModel;
+            ViewModel.ShowFacebookPages = false;
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_GenerateToken(object sender, RoutedEventArgs e)
         {
-            var pageToken = ViewModel.TokenGenerator();
-            ViewModel.PageToken = pageToken;
+            ViewModel.TokenGenerator();            
+        }
+
+        private void Button_CopyToClipboard(object sender, RoutedEventArgs e)
+        {
+            Clipboard.SetText(ViewModel.PageToken);
+        }
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox selectBox = (ComboBox)sender;
+
+            var value = "";
+            if (selectBox.SelectedIndex >= 0)
+                value = ((ComboBoxItem)selectBox.SelectedValue).Content.ToString();
+
+            ViewModel.GetPermanentPageAccessToken(value);
         }
     }
 }
