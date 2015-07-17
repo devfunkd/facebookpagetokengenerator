@@ -16,10 +16,6 @@ namespace FacebookTokenGenerator
 
         private static void TokenGenerator()
         {
-            var appId = "205296092988057";
-            var appSecret = "b69186a963a70879d50e934896c80804";
-            var accessToken = "CAAC6tziyQpkBAGZCqmnNr3CYW4OQLpjp1hA9MoiKPoDJqnG8dcfG6OphKmi6YyYVZBzhvXgaMtE1ZC717YIrNqgVS8Nd50ZBBWNghp6aSDpg8oazex7Cspzqse5UkKAZA16JRkf0fZAUfhrFEex2CuT4BSTA7RXIcdPZATBHnLHxKmQeFzc8xhSOiZAAa7SyoQdmFw1ZCRYKepMG1VAgUykUoHc4b8VpolFl3xn7s8MR2nQZDZD";
-
             Console.WriteLine("AppId: ");
             //appId = Console.ReadLine();
 
